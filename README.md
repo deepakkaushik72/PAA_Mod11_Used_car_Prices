@@ -32,7 +32,7 @@ V.	**SUCCESS CRITERIA:** The success of this project will be measured by the mod
 
 •	  R^2 values on the Train and validation dataset.
 
-•	  Number and Percentages of car prices predicted within 5%, 10% and 15% Range of Actual prices
+•	  Number/Percentages of car prices predicted within 5%, 10% and 15% and 25% Range of Actual prices
 
 **VI.	HYPOTHESIS:** I have the following Hypothesis basis my understanding of the used car market and the features provided in the dataset:
 
@@ -63,9 +63,12 @@ V.	**SUCCESS CRITERIA:** The success of this project will be measured by the mod
 
 *•	The car price tends to decrease with the increase in odometer reading*
 
+*•	The average car price tends to go up with the increase in Cylinders: 8, 10, 12 cylinder cars are expensive compared to 3, 4,       5, 6 cylinder cars*
+
+
 **<ins>3.	DATA PREPARATION**</ins>
 
-*•	Prices of cars data is highly skewed to the right with more than 90% the data in less than 30K price. Mean at around 20K.*
+*•	Prices of cars data is highly skewed to the right with more than 95% the data in less than 45K price. Mean at around 20K.*
 
 *•	Odometer Data is also highly skewed to the right with mean as 97K *
 
@@ -75,7 +78,7 @@ V.	**SUCCESS CRITERIA:** The success of this project will be measured by the mod
 
 *•	Removed car prices over $500K (Lot of cars show prices as 111111, 123456 1000000, 9999999 etc… Also, prices of over 10Million      and over 1 Billion as well)*
 
-*•	Base file for consideration has 379K car records*
+*•	Base file for consideration has 379K car records (prices range $1000 - $500000)*
 
 *•	More than 30% Missing values for columns Cylinders, condition, type, size etc.*
 
@@ -83,7 +86,7 @@ V.	**SUCCESS CRITERIA:** The success of this project will be measured by the mod
 
 *•	Created a Dataframe (vehicles_base_features) for Feature Engineering after including all features with “NAN” values*
 
-*•	Converted Year to Date time and creating a new feature "AGE" from Year*
+*•	Converted Year to Date time and creating a **new feature "AGE"** from Year*
 
 *•	Created a pipeline and scaled the numeric data and also used OneHotEncoder for categorical features*
 
@@ -115,9 +118,11 @@ V.	**SUCCESS CRITERIA:** The success of this project will be measured by the mod
 
 *•	These features explain 85% of the variance in car Prices (Test R^2 of 0.853)*
 
-*•	Car Prices drops sharply with age initially till 25 yrs (More the age, less the price)* 
+**ACCURACY:** 33% of car prices are predicted within 5% range of actual prices, 50% of cars prices are predicted within 10%       range, 63% of cars within 15% range and more than 80% of cars are predicted with 25% range.*
 
-*•	Prices tend to go up slightly after 25+ years. For 50+ - 70 years, the prices go up, may be, because of cars being more “Rare”     or “classic” (Need to discuss with the Car Dealer on this spike in prices)* 
+*•	Predicted Prices mimic the actual Car Prices till 40 yrs and tends to go down as age goes up(More the age, less the price)* 
+
+*•	High variation between the Predicted and actual prices For cars in 50+ - 100 years, the prices go up, may be, because of cars      being in “Vintage” or “classic” (Need to discuss with the Car Dealer on this spike in prices)* 
 
 *•	Car prices tend to go down with higher Odometer readings (More the Odometer reading, less the price). However, this may not        apply for “Classic” or “Rare” cars*
 
@@ -128,8 +133,6 @@ V.	**SUCCESS CRITERIA:** The success of this project will be measured by the mod
 *.  Highest variation in Actual and Predicted prices for Cars in "New" condition.*
 
 *•	Model does a great job closely following the actual prices by Manufacturer (Plotted in the Jupyter Notebook)*
-
-*•	**ACCURACY:** 33% of car prices are predicted within 5% range of actual prices, 50% of the car prices are predicted within 10%       range and 63% within 15% range.*
 
 *•	Create a web Interface for Used car Dealers where they can input the Car data and get the Price of the car using this model*
 
@@ -142,6 +145,8 @@ V.	**SUCCESS CRITERIA:** The success of this project will be measured by the mod
 *•	Car Dealers to capture the car status (“Rare”, “Classic” etc) so that it can be used for predicting the prices of these cars.      Currently, this data is not available.*
 
 *•	The Modeling Team need to understand more context on the “Classic”, “Rare” category cars and what drives their prices for cars     with age between 50 to 100 years.*
+
+*•	For further improvement Model Accuracy, the modeling Team will try Clustering techniques to clusters cars in unique clusters       and then apply Regression models specific to these unique clusters*
 
 *•	For further improvement Model Accuracy, the modeling Team can try Deep Learning Models/Neural Networks so improve results          are compared to Regression models*
 
