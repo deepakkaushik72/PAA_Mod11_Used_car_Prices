@@ -122,6 +122,10 @@ of age, the prices go up again
 
 *•	The average Predicted Prices follow very closely the actual prices for different Odometer ranges (Plotted in Jupyter notebook)* 
 
+*Cars with "New" condition have the highest average price, followed by "Good", "Like New".... "Fair" and "Salvage" conditions cars have lowest prices.*
+
+*Highest variation in Actual and Predicted prices for Cars in "New" condition.*
+
 *•	Model does a great job closely following the actual prices by Manufacturer (Plotted in the Jupyter Notebook) *
 
 *•	**ACCURACY:** 33% of car prices are predicted within 5% range of actual prices, 50% of the car prices are predicted within 10% range   and 63% within 15% range.*
@@ -132,11 +136,11 @@ of age, the prices go up again
 
 *•	Car Dealers to validate the Data for Car Prices greater than 500K (Prices such as 111111, 999999, 123456789, and crossing          millions and Billions need revisit/rechecking)* 
 
-*•	CONDITION is one of the top features for predicting car prices and should be included in the car data by Car Dealers (Currently    missing ~40% data) *
+*•	CONDITION is one of the top features for predicting car prices and should be included in the car data by Car Dealers (Currently    missing ~40% data)*
 
 *•	Car Dealers to capture the car status (“Rare”, “Classic” etc) so that it can be used for predicting the prices of these cars.      Currently, this data is not available.*
 
-•	The Modeling Team need to understand more context on the “Classic”, “Rare” category cars and what drives their prices.
+*•	The Modeling Team need to understand more context on the “Classic”, “Rare” category cars and what drives their prices for cars with age between 50 to 100 years.*
 
 •	For further improvement Model Accuracy, the modeling Team can try Deep Learning Models/Neural Networks so improve results are      compared to Regression models
 
