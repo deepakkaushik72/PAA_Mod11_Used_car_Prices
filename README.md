@@ -4,7 +4,7 @@ Practical Application Assignment II
 
 Link to Jupyter Notebook: https://github.com/deepakkaushik72/PAA_Mod11_Used_car_Prices/blob/main/prompt_II.ipynb
 
-Link to the Images:
+Link to the Images: https://github.com/deepakkaushik72/PAA_Mod11_Used_car_Prices/tree/main/images%20-%20Analysis
 
 Link to Data: Cant have the data here as the file size is 54 MB
 
