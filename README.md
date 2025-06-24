@@ -8,7 +8,7 @@ Link to the Images:
 
 Link to Data: 
 
-1. BUSINESS PROBLEM: Predicting the used car prices (Dependent variable is Price) with a clear objective to help the Used Car Dealers to make the Data Driven informed decisions on negotiating the Car Prices and maximize their margins
+1. BUSINESS PROBLEM: Predicting the used car prices (Dependent variable is Price) with a clear objective to help the Used Car Dealers to make the Data Driven informed decisions on negotiating the Car Prices and maximize their margins.
 
 I.	The goal is to develop a predictive model that learns the relationship between the input features/variables and the continuous target variable "used car price" using historical data. Since this is about predicting continuous variable (price), it’s a "Regression problem". I will be using the Regression techniques to accurately predict the price of the used car with the following features in the given dataset:
 
