@@ -2,11 +2,11 @@
 
 Practical Application Assignment II
 
-Link to Jupyter Notebook:
+Link to Jupyter Notebook: https://github.com/deepakkaushik72/PAA_Mod11_Used_car_Prices/blob/main/prompt_II.ipynb
 
 Link to the Images:
 
-Link to Data: 
+Link to Data: Cant have the data here as the file size is 54 MB
 
 1. BUSINESS PROBLEM: Predicting the used car prices (Dependent variable is Price) with a clear objective to help the Used Car Dealers to make the Data Driven informed decisions on negotiating the Car Prices and maximize their margins.
 
